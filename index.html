@@ -5,6 +5,196 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1. Parcijalni ispit HTML</title>
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        transition: all 0.3s;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        scroll-behavior: smooth;
+      }
+      .header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 3px 20px #888888;
+      }
+      .logo img {
+        width: 70px;
+        height: auto;
+      }
+      .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .footer,
+      .nav ul li a:link,
+      .nav ul li a:visited {
+        text-decoration: none;
+        color: #000;
+      }
+      .nav ul li a:hover,
+      .nav ul li a:active {
+        color: #f3c230;
+        text-decoration: none;
+      }
+      footer a:hover,
+      footer a:active {
+        color: #f3c230;
+      }
+      main {
+        max-width: 1150px;
+        padding: 20px 0px;
+      }
+      article img {
+        width: 500px;
+        height: auto;
+      }
+      article {
+        margin-bottom: 60px;
+      }
+      h2 {
+        margin: 20px 0;
+      }
+      h1 {
+        margin-bottom: 50px;
+      }
+      .article-box {
+        display: flex;
+        gap: 20px;
+      }
+
+      form input {
+        width: 100%;
+      }
+      footer {
+        max-width: 1150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!---------------------- HEADER START ---------------------->
+    <header class="header">
+      <div class="logo">
+        <a href="#"><img src="./multimedia/logo.png" /></a>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#o-nama">O nama</a></li>
+          <li><a href="#nase-djelatnosti">Naše djelatnosti</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+    </header>
+    <!---------------------- HEADER END ---------------------->
+    <!---------------------- MAIN START ---------------------->
+    <main>
+      <h1><i>Turistička Agencija "Avanturist"</i></h1>
+      <section>
+        <article id="o-nama">
+          <h2>O nama</h2>
+          <div class="article-box">
+            <img src="./multimedia/about-us.jpg" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              voluptatibus tenetur beatae amet impedit, dolorum neque eveniet
+              ipsa recusandae quis est libero suscipit alias tempora quisquam
+              quidem qui optio rerum. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Aperiam voluptatibus tenetur beatae amet
+              impedit, dolorum neque eveniet ipsa recusandae quis est libero
+              suscipit alias tempora quisquam quidem qui optio rerum. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              voluptatibus tenetur beatae amet impedit, dolorum neque eveniet
+              ipsa recusandae quis est libero suscipit alias tempora quisquam
+              quidem qui optio rerum. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Aperiam voluptatibus tenetur beatae amet
+              impedit, dolorum neque eveniet ipsa recusandae quis est libero
+              suscipit alias tempora quisquam quidem qui optio rerum.Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Aperiam voluptatibus
+              tenetur beatae amet impedit, dolorum neque eveniet ipsa recusandae
+              quis est libero suscipit alias tempora quisquam quidem qui optio
+              rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aperiam voluptatibus tenetur beatae amet impedit, dolorum neque
+              eveniet ipsa recusandae quis est libero suscipit alias tempora
+              quisquam quidem qui optio rerum.
+            </p>
+          </div>
+        </article>
+        <article id="nase-djelatnosti">
+          <h2>Naše djelatnosti</h2>
+          <div class="article-box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              voluptatibus tenetur beatae amet impedit, dolorum neque eveniet
+              ipsa recusandae quis est libero suscipit alias tempora quisquam
+              quidem qui optio rerum. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Aperiam voluptatibus tenetur beatae amet
+              impedit, dolorum neque eveniet ipsa recusandae quis est libero
+              suscipit alias tempora quisquam quidem qui optio rerum. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              voluptatibus tenetur beatae amet impedit, dolorum neque eveniet
+              ipsa recusandae quis est libero suscipit alias tempora quisquam
+              quidem qui optio rerum. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Aperiam voluptatibus tenetur beatae amet
+              impedit, dolorum neque eveniet ipsa recusandae quis est libero
+              suscipit alias tempora quisquam quidem qui optio rerum.Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Aperiam voluptatibus
+              tenetur beatae amet impedit, dolorum neque eveniet ipsa recusandae
+              quis est libero suscipit alias tempora quisquam quidem qui optio
+              rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aperiam voluptatibus tenetur beatae amet impedit, dolorum neque
+              eveniet ipsa recusandae quis est libero suscipit alias tempora
+              quisquam quidem qui optio rerum.
+            </p>
+            <img src="./multimedia/about-us.jpg" />
+          </div>
+        </article>
+        <article id="kontakt">
+          <h2>Kontakt</h2>
+          <div class="article-box">
+            <img src="./multimedia/contact.jpg" />
+            <form method="get">
+              <label>Ime:</label>
+              <input type="text" placeholder="Marko" />
+              <br />
+              <label>Prezime:</label>
+              <input type="text" placeholder="Markovic" />
+              <br />
+              <label>E-mail:</label>
+              <input type="email" placeholder="vas@email.com" />
+              <br />
+              <label>Br. mobitela</label>
+              <input type="tel" placeholder="*385 88 406 56 89" />
+              <button
+                type="submit"
+                style="margin-top: 10px; width: 100%; padding: 10px"
+              >
+                Pošalji
+              </button>
+              <br />
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!---------------------- MAIN END ---------------------->
+    <!---------------------- FOOTER START ---------------------->
+    <hr />
+    <footer>
+      <p>© Copyright 2022 Avanturist.</p>
+
+      <a href="#" style="text-decoration: none">Vrh stranice</a>
+    </footer>
+    <!------------------------------- FOOTER END -------------------------------------->
+  </body>
 </html>
