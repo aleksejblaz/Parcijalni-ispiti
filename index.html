@@ -80,6 +80,28 @@
         align-items: center;
         padding: 20px;
       }
+
+      a[target] {
+        border-bottom: 1px solid #f3c230;
+      }
+      [href="#kontakt"] {
+        border-bottom: 1px solid red;
+      }
+      [class|="article"] {
+        border: 1px solid #f3c230;
+      }
+      [class^="o-nam"] {
+        box-shadow: 1px 10px 20px #f3c230;
+      }
+      [id$="ox-2"] {
+        box-shadow: 1px 10px 20px #90fd6f;
+      }
+      [class*="yyy"] {
+        color: #e70505;
+      }
+      h1[id$="xyx"] {
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -91,7 +113,9 @@
       <div class="nav">
         <ul>
           <li><a href="#o-nama">O nama</a></li>
-          <li><a href="#nase-djelatnosti">Naše djelatnosti</a></li>
+          <li>
+            <a href="#nase-djelatnosti" target="_blank">Naše djelatnosti</a>
+          </li>
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </div>
@@ -99,13 +123,13 @@
     <!---------------------- HEADER END ---------------------->
     <!---------------------- MAIN START ---------------------->
     <main>
-      <h1><i>Turistička Agencija "Avanturist"</i></h1>
+      <h1 id="famaxyx"><i>Turistička Agencija "Avanturist"</i></h1>
       <article>
-        <section id="o-nama">
-          <h2>O nama</h2>
+        <section id="o-nama" class="o-nama">
+          <h2 id="famaxyx">O nama</h2>
           <div class="article-box">
             <img src="./multimedia/about-us.jpg" />
-            <p>
+            <p class="abcdyyy">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
               voluptatibus tenetur beatae amet impedit, dolorum neque eveniet
               ipsa recusandae quis est libero suscipit alias tempora quisquam
@@ -132,7 +156,7 @@
         </section>
         <section id="nase-djelatnosti">
           <h2>Naše djelatnosti</h2>
-          <div class="article-box">
+          <div class="article-box" id="box-2">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
               voluptatibus tenetur beatae amet impedit, dolorum neque eveniet
