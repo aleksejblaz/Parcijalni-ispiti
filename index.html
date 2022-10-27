@@ -4,105 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>1. Parcijalni ispit HTML</title>
-    <style>
-      * {
-        margin: 0 auto;
-        padding: 0;
-        box-sizing: border-box;
-        transition: all 0.3s;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        scroll-behavior: smooth;
-      }
-      .header {
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0px 3px 20px #888888;
-      }
-      .logo img {
-        width: 70px;
-        height: auto;
-      }
-      .nav ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-        text-transform: uppercase;
-        font-weight: bold;
-        cursor: pointer;
-      }
-      .footer,
-      .nav ul li a:link,
-      .nav ul li a:visited {
-        text-decoration: none;
-        color: #000;
-      }
-      .nav ul li a:hover,
-      .nav ul li a:active {
-        color: #f3c230;
-        text-decoration: none;
-      }
-      footer a:hover,
-      footer a:active {
-        color: #f3c230;
-      }
-      main {
-        max-width: 1150px;
-        padding: 20px 0px;
-      }
-      section img {
-        width: 500px;
-        height: auto;
-      }
-      article {
-        margin-bottom: 60px;
-      }
-      h2 {
-        margin: 20px 0;
-      }
-      h1 {
-        margin-bottom: 50px;
-      }
-      .article-box {
-        display: flex;
-        gap: 20px;
-      }
-
-      form input {
-        width: 100%;
-      }
-      footer {
-        max-width: 1150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-      }
-
-      a[target] {
-        border-bottom: 1px solid #f3c230;
-      }
-      [href="#kontakt"] {
-        border-bottom: 1px solid red;
-      }
-      [class|="article"] {
-        border: 1px solid #f3c230;
-      }
-      [class^="o-nam"] {
-        box-shadow: 1px 10px 20px #f3c230;
-      }
-      [id$="ox-2"] {
-        box-shadow: 1px 10px 20px #90fd6f;
-      }
-      [class*="yyy"] {
-        color: #e70505;
-      }
-      h1[id$="xyx"] {
-        color: red;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <!---------------------- HEADER START ---------------------->
@@ -114,7 +18,26 @@
         <ul>
           <li><a href="#o-nama">O nama</a></li>
           <li>
-            <a href="#nase-djelatnosti" target="_blank">Naše djelatnosti</a>
+            <div class="dropdown">
+              <a href="#nase-djelatnosti" target="_blank">Naše djelatnosti</a>
+              <div class="dropdown-content">
+                <a href="#">Bla #1</a>
+                <a href="#">Blabla #2</a>
+                <!-- SECOND DROPDOWN MENU START -->
+                <div class="second-dropdown">
+                  <a href="#">Blablabla #3</a>
+                  <div class="second-dropdown-content">
+                    <a href="#">Bla #4</a>
+                    <a href="#">Bla #5</a>
+                    <a href="#">Bla #6</a>
+                    <a href="#">Bla #7</a>
+                    <a href="#">Bla #8</a>
+                    <a href="#">Bla #9</a>
+                  </div>
+                </div>
+                <!-- SECOND DROPDOWN MENU END -->
+              </div>
+            </div>
           </li>
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
