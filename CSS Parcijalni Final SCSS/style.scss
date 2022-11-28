@@ -1,0 +1,52 @@
+@import "./base/reset";
+@import "./base/colors";
+@import "./mixin/mixins";
+
+.wrapper {
+  background-image: url(./image.webp);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include gridCenter();
+  grid-template-columns: 12vw;
+  grid-template-rows: repeat(3, 10vw);
+  gap: 5%;
+}
+
+.square {
+  @include flexCenter();
+  font-size: 5vw;
+  font-weight: 900;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  transform: translateX(-1400px);
+  animation-name: animation-1;
+}
+.square-1 {
+  background-color: $zelenaBackground;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.square-2 {
+  background-color: $smedjaBackground;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.square-3 {
+  background-color: $plavaBackground;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animation-1 {
+  0% {
+    transform: translateX(-1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
